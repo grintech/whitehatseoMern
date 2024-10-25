@@ -7,4 +7,7 @@ frontend/.cache/
 frontend/build/
 backend/.cache/
 backend/build/
-.env
+
+# Ignore .env files in frontend and backend
+frontend/.env
+backend/.env
