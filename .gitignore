@@ -7,3 +7,4 @@ frontend/.cache/
 frontend/build/
 backend/.cache/
 backend/build/
+.env
