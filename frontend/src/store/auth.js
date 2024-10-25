@@ -18,7 +18,7 @@ export const AuthProvider = ({ children }) => {
 
     const logout = () => {
         localStorage.removeItem("token");
-        navigate('/login'); // Redirect to homepage
+        navigate('/'); // Redirect to homepage
     };
 
     const isAuthenticated = () => {
