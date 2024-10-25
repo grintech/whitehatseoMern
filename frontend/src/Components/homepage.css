@@ -1,0 +1,208 @@
+                  
+                /* CSS OF HOMEPAGE BANNER  */
+
+                .main-banner h1{
+                    font-size: 45px; 
+                    margin-bottom: 20px;
+                    color: #0e314c;
+                    /* / margin: 28px; / */
+                 }  
+                 /* / .main-banner p{margin: 28px;} / */
+                 .main-banner {
+                    color: #6084a4;
+                    line-height: 1.8;
+                    padding: 150px 0;
+                 }
+                 
+                
+                 .main-banner .banner-btn {
+                    background-color: #44ce6f;
+                    border: none;
+                    padding: 12px 33px;
+                    margin-right: 10px;
+                    text-transform: uppercase;
+                    
+                
+                 }
+                
+                 .main-banner .btn-hover button:hover {
+                    color: #fff;
+                    background: #c679e3;
+                    transition: all .5s ease-in-out;
+                    border-radius: 2px;
+                }
+                
+                .main-banner .banner-img img{
+                    position: absolute;
+                    /*  */
+                
+                }
+                
+                
+                .main-banner .banner-img .banner-img1{
+                    top: 78px;
+                    left: 70px;
+                    z-index: 10;
+                
+                
+                }
+                
+                .main-banner .banner-img .banner-img2{
+                    left: 326px;
+                    top: 181px;
+                    z-index: 0;
+                }
+                
+                
+                .main-banner .banner-img .banner-img3{
+                    top: 173px;
+                    left: 490px;
+                }
+                .main-banner .banner-img .banner-img4{
+                    top: 108px;
+                    left: 574px;
+                }
+                
+                .main-banner .banner-img .banner-img5{
+                    top: 175px;
+                    left: 456px;
+                
+                }
+                
+                .main-banner .banner-img .banner-img6{
+                    top: 64px;
+                    left: 558px;
+                }
+                
+                .main-banner .banner-img .banner-img9{
+                    left: 196px;
+                    top: 218px;
+                    z-index: -3;
+                
+                }
+                
+                .main-banner .banner-img .banner-img7{
+                    top: 52px;
+                    left: 364px;
+                
+                
+                }
+                .main-banner .banner-img .banner-img8{
+                  top: -121px;
+                  left: 360px;
+                }
+                
+                .main-banner .banner-img .banner-img10{
+                    top: 97px;
+                    left: 252px;
+                }
+                
+                .main-banner .banner-img .banner-img11{
+                    top: 50px;
+                    left: 306px;
+                
+                
+                }
+                .main-banner .banner-img .banner-img12{
+                  top: 92px;
+                  left: 198px;
+                  z-index: -3;
+                }
+                
+                .main-banner .banner-img .banner-img13{
+                    top: 177px;
+                    left: 410px;
+                }
+                
+                .main-banner .banner-img .banner-img14{
+                    top: 359px;
+                    left: 553px;
+                }
+                
+                
+                                              /* FOR DESIGNING CARDS  */
+                
+                
+                .all-cards{
+                    position: relative;
+                    margin-top: 197px;  
+                    padding: 30px 20px; 
+                     
+                    
+                }
+                 
+                
+                .all-cards p{
+                    color: #6084a4;
+                    line-height: 1.8;
+                }
+                 .all-cards .card-title{
+                    font-size: 18px;
+                    margin-top: -9px;   
+                    font-weight: 500 !important; 
+                    outline: 0 !important;
+                 }
+                
+                .all-cards .card{
+                    transition: all .5s ease-in-out;
+                    
+                  
+                }
+                 .all-cards .card:hover{
+                    color: #fff;
+                    background-color: #44ce6f !important;
+                    transition: all .5s ease-in-out;
+                    border-radius: 2px;
+                    transform: translateY(-9px);     
+                    border-color: transparent
+                   
+                 }
+                
+                 .all-cards .card-body{
+                    border: 1px dashed #cdf1d8;
+                 }
+                
+                 .all-cards .card:hover i{
+                    background: #fff !important;
+                    color: #44ce6f;
+                 }
+                
+                
+                .all-cards i{
+                    margin: 21px;
+                    display: inline-block;
+                    text-align: center;
+                    width: 55px;
+                    height: 55px;
+                    line-height: 55px;
+                    background: #cdf1d8;
+                    border-radius: 50%;
+                    color: #44ce6f;
+                    transition: .5s;
+                }
+                
+                .card .icon2{
+                    color: #f78acb;
+                    background: rgba(247, 138, 203, .3);
+                }
+                
+                .card .icon3{
+                    color: #c679e3;
+                    background: #edc3fc;
+                }
+                
+                .card .icon4{
+                    color: #eb6b3d;
+                    background: rgba(235, 107, 61, .3);
+                }
+                  
+                                         /* SECTION TITLE  */
+                
+                
+                .section-bar h2{
+                    margin-bottom: 18px;
+                    font-size: 30px;
+                    font-weight: 600;
+                }                   
+                
+               

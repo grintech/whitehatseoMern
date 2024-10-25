@@ -1,0 +1,67 @@
+    
+    
+    /* CSS OF ABOUTPAGE */
+/* .aboutpage .container3 .header{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+} */
+ 
+.container3 .box{  
+    background: transparent url(../../../public/homeimages/banner-bg.jpg) 100% 0 no-repeat;
+    text-align: center;
+    padding-top: 180px;
+    padding-bottom: 100px;
+    z-index: 1;
+   
+}
+
+.container3 .box h2{
+    font-weight: 700;
+    font-size: 32px;
+    color: #0e314c;
+}
+
+
+        /* SECTION CSS */
+
+.section4 p{
+    color: #6084a4;
+    line-height: 1.8;
+    font-size: 14px;
+}      
+.section4 .container{
+    margin-top: 52px;
+}
+.section4 .aboutus-img img{
+    max-width: 100%;
+}
+.section4 .section-content{
+    margin-left: 41px;
+} 
+
+.section4 .section-content h2{
+    font-size: 30px;
+    font-weight: 600;
+    color: #0e314c;
+}
+
+.section4 .about-inner .inner{
+    margin-top: 52px;
+}
+.section4 .about-inner h3{
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #0e314c;
+    font-weight: 500;
+}
+
+.section4{
+    margin-bottom: 35px;
+}
+
+.aboutpage .section3{
+    margin-top: 120px !important;
+}

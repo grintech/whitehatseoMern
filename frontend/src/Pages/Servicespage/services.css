@@ -1,0 +1,104 @@
+
+ .container3 .header{
+    background: transparent url(../../../public/homeimages/banner-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* width: 100%; */
+    position: relative;
+    z-index: 1;
+}
+
+.services-section{
+    position: relative;
+    background: linear-gradient(to left bottom,#fffcff,#fbfaff,#effbff,#e0fdff,#d5fefd);
+    z-index: 1;
+    padding-bottom: 102px;
+    
+}
+ .services-section .box{
+    position: relative;
+    text-align: center;
+    background-color: #fff;
+    transition: .5s;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 15px;
+
+}
+
+.services-section .box:before{
+    content: "";
+    position: absolute;
+    left: -15px;
+    bottom: -15px;
+    width: 30px;
+    height: 30px;
+    transition: .5s;
+    transform: rotate(45deg);
+    background: #0d96de;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.services-section .box:hover:before{
+opacity: 1;
+visibility: visible;
+}
+
+.services-section h3 a{
+    text-decoration: none;
+    color: #0e314c;
+    transition: .5s;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+ .services-section h3 a:hover{
+    color: #44ce6f;
+}
+
+.services-section p{
+    color: #6084a4;
+    line-height: 1.8;
+    max-width: 318px;
+    
+}
+
+/*------Service Single------------*/
+.service_single form .card-body{ padding: 30px 30px;}
+.service_single form .form-select{font-size: 14px; height: 40px; border-radius: 6px; color: gray;}
+.service_single form textarea{font-size: 14px; height: 80px; background-color: #fff; border-radius: 6px;}
+.service_single form textarea:focus{box-shadow: none;}
+.service_single form input:focus{box-shadow: none;}
+.service_single .form-select:focus{box-shadow: none;}
+.service_single form input{font-size: 14px; height: 40px; background-color: #fff; border-radius: 4px;}
+.service_single .submit_btn{
+   width: 100%;
+   padding: 10px 10px;
+   border: 0;
+   background-color: #0d96de;
+   color: #fff;
+   border: 1px solid #0d96de;
+   transition: all .3s ease;
+   border-radius: 6px;
+
+}
+.service_single .submit_btn:hover{
+    background-color: #fff;
+    color: #0d96de ;
+    border: 1px solid #0d96de;
+    transition: all .3s ease;
+}
+
+.service_details .works{background-color: unset !important;}
+
+.service_single .features-section .card .icons{margin: 15px 20px !important;}
+.service_single .features-section .card .icons2{margin: 15px 20px !important;}
+.service_single .features-section .card .icons3{margin: 15px 20px !important;}
+.service_single .features-section .card .input {padding: 10px 20px !important;}
+.service_single .features-section .card:hover{background-color: #0d96de;}
+.service_single .features-section .card:hover .card-title{color: #fff !important;}
+.service_single .features-section .card:hover .card-text{color: #fff !important;}

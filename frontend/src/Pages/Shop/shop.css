@@ -1,0 +1,119 @@
+.shop-section{
+    padding-top: 80px;
+    margin-bottom: 80px;
+}
+
+.shop-section .products_heading{
+    background-color: #fcfbfb;
+    padding: 10px 40px;
+    margin-bottom: 30px;
+}
+
+.shop-section .products_count p{
+    color: #6084a4;
+}
+
+.shop-section .products_popularity .selection{
+    cursor: pointer;
+    background-color: transparent;
+    border-color: #ebebeb;
+    border-radius: 4px;
+    font-size: 14px;
+    height: 40px;
+}
+
+.shop-section .product-img{
+    width: 100% !important;
+    /* transform: scale(1.1); */
+}
+
+.shop-section .product-content h3 {
+    color: #0e314c;
+    transition: .5s;
+    font-size: 18px;
+    font-weight: 600;
+    
+}
+.shop-section .product-content h3:hover{
+color: #44ce6f;
+}
+.shop-section  a{
+    text-decoration: none;
+}
+
+.shop-section ul li{
+list-style: none;
+}
+
+.shop-section .product-content{
+    text-align: center;
+}
+
+.shop-section .product-content .add-to-cart{
+    
+    width: 100%;
+    color: #0e314c;
+    border: 1px solid #0e314c;
+    padding: 10px 15px;
+    background-color: #fff;
+    font-size: 14px;
+    
+}
+.single-product:hover .add-to-cart{
+    background-color: #0e314c;
+    color: #fff;
+    transition: .5s;
+}
+
+.single-product:hover .product-img{
+    opacity: .3;
+    transition: all 1.5s ease-out;
+    transform: scale(1.1);
+  
+}
+
+.product-img img{
+    width: 100%;
+}
+
+.single-product .product-img ul i{
+    background: #fff;
+    width: 35px;
+    border: none; 
+    /* outline: 0 !important; */
+    line-height: 35px;
+}
+
+ .product-img ul{  
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    left: 50px;
+    top: 40%; 
+}
+
+.product-img .no-border-btn{
+        border: none;
+        background: none; 
+        padding: 0;
+        margin: 0;
+        outline: none; 
+      }
+      
+
+.shop-section .page-link{
+        color: #6084a4;
+        border-color: none;  
+     }
+
+.shop-section .page-item .page-link.active{
+        background-color: #44ce6f;      
+}
+
+.shop-section .page-link:hover{
+    background-color: #44ce6f;
+     color: #fff;
+}
+
+
+

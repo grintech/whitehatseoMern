@@ -1,0 +1,97 @@
+.single-form{
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 0 10px #eee;
+    margin: auto;
+    padding: 40px 30px;
+    border-radius: 10px;
+    border: 1px solid #edf2f9;
+}
+
+ .container6{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.single-form img{
+    margin-bottom: 10px;
+}
+.single-form a{
+    text-decoration: none;
+    color: #0e314c;
+}
+.single-form a:hover{
+    color: #44ce6f;
+}
+
+.single-form p{
+    color: #6084a4;
+    margin-top: 20px;
+}
+
+.single-form form .headings{
+    text-align: left;
+}
+.single-form .form-control{
+    height: 45px;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #0e314c;
+    border: 1px solid #eee;
+    border-radius: 0;
+    background: #eee;
+    transition: .5s;
+}
+
+.single-form form .btn{
+    position: relative;
+    width: 100%;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    background-color: #0d96de;
+    padding: 12px 15px;
+    border: 1px solid #0d96de;
+
+
+}
+
+.single-form form .btn:hover{
+    background-color: white ;
+    color: #0d96de;
+    box-shadow: 0 13px 27px 0 rgba(104, 181, 245, 0.25);
+    border: 1px solid #0d96de;
+   
+    
+} 
+
+.single-form .foot ul{
+    list-style: none;
+    justify-content: center;
+   
+}
+
+.single-form .foot a{
+    color: #0e314c;
+   transition: .5s;
+
+}
+
+.single-form .foot ul a{
+    border: 1px solid #edf2f9;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    padding: 5px;
+    margin: 0 10px;
+    padding-left: 20px;
+
+}
+
+.single-form .foot ul a:hover{
+    color: #44ce6f;
+}
+
+.single-form .foot p a:hover{
+    color: #44ce6f;
+}

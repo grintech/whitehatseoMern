@@ -1,0 +1,143 @@
+  
+  
+  /* CSS FOR CONTACT */
+
+  
+.contact-title .container3 .header{
+  background: transparent url(../../../public/homeimages/banner-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+
+  /* .contact-section .box h2{
+    font-size: 28px;
+    font-weight: 700;
+    color: #0e314c;
+    text-align: center;
+    
+   
+  } */
+
+ .contact-section{
+  margin: 54px 0;
+ }
+  .contact-section .contact-info {
+    text-align: center;
+    transition: .4s;
+    box-shadow: 0 2px 48px 0 rgba(0, 0, 0, .08);
+    background: #fff;
+    padding: 30px;
+  }
+.contact-section a{
+    text-decoration: none;
+   
+}
+
+.contact-section .contact-info:hover {
+    transform: translateY(-10px);
+}
+
+.contact-section .contact-info:hover i{
+  background-color: #0d96de;
+  color: #fff;
+ 
+}
+.contact-section p:hover{
+    color: #0d96de;
+
+}
+  .contact-section p {
+    margin-bottom: 0;
+    color: #6084a4;
+    
+
+  }
+
+  .contact-section .contact-info h3{
+    font-size: 20px;
+    /* margin-top: 25px;
+    margin-bottom: 20px; */
+  }
+  
+  .contact-section .contact-info i{
+    display: inline-block;
+    width: 65px;
+    height: 65px;
+    line-height: 62px;
+    background: #f7fafd;
+    border-radius: 50%;
+    font-size: 30px;
+    color: #0d96de;
+    transition: .4s;
+  }
+
+
+
+  /* CONTACT AREA (FILL FORM PART) */
+
+
+  .contact-area .section-title{
+    text-align: center;
+  }
+
+  .contact-area .section-title h2{
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 600;
+    color:  #0e314c;
+  }
+
+  .contact-area .section-title p{
+    color: #6084a4;
+    line-height: 1.8;
+  }
+
+
+           /* CONTACT SECTION2 */
+
+
+  .contact-section2 .contactus-img img{
+    max-width: 100%;
+  }
+
+.contact-section2 .btn-purple1{
+  position: relative;
+  background: #0d96de;
+  box-shadow: 0 13px 27px 0 rgba(198, 121, 227, .25);
+  border: none;
+  padding: 12px 33px;
+  color: #f9f6f6;
+  transition: .5s;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.contact-section2 .btn-purple1:hover{
+  background-color: #c679e3;
+}
+
+.contact-section2 .form-control{
+   
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #0e314c;
+    border: 1px solid #eee;
+    border-radius: 0;
+    background: #eee;
+    transition: .5s;
+}
+
+
+.contact-section2 .form-details .checkbox label a{
+  color: #0d96de;
+  text-decoration: none;
+}
+
+.contact-section2 .form-details .checkbox label a:hover{
+  color: #0d96de;
+  text-decoration: underline;
+}
