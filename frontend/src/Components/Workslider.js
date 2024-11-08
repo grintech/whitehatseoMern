@@ -21,6 +21,7 @@ import { Link } from 'react-router-dom';
   };
 
   const BASE_URL = process.env.REACT_APP_URL;
+  const WEBSITE_URL = process.env.REACT_APP_FRONTEND;
 
 const Workslider = () => {
 

@@ -20,6 +20,8 @@ import 'swiper/css/pagination';
    };
 
    const BASE_URL = process.env.REACT_APP_URL;
+  const WEBSITE_URL = process.env.REACT_APP_FRONTEND;
+
    
    const  Teamslider = () => {
      
@@ -37,6 +39,7 @@ import 'swiper/css/pagination';
       });
 
   }, []);
+
 
   return (
      <>
@@ -74,7 +77,7 @@ import 'swiper/css/pagination';
                   <div className='card border-0'>
                   <div className="team-member">
                       <img
-                      src={require(`/public/teamimg/${item.image}`)}
+                      src={`${WEBSITE_URL}/teamimg/${item.image}`}
                       className='img ' alt='team-member1' />
                       <div className="team-info">
                         <h5 className="member1-title m-0">{item.title}</h5>

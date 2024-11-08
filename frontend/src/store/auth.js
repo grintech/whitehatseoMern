@@ -7,7 +7,7 @@ export const AuthProvider = ({ children }) => {
 
     //ToggleSidebar
     // const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-    const [isSidebarOpen, setIsSidebarOpen] = useState(window.innerWidth <= 768);
+    const [isSidebarOpen, setIsSidebarOpen] = useState(window.innerWidth <= 992);
     
 
     const navigate = useNavigate();

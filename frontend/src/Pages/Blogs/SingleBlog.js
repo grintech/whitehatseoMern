@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Navbar from "../../Components/Navbar";
 
-import Lightbox from 'react-image-lightbox';
-import 'react-image-lightbox/style.css';
+import Lightbox from 'react-awesome-lightbox';
+import 'react-awesome-lightbox/build/style.css';
 import Footer from "../../Components/Footer";
 
 
@@ -20,6 +20,8 @@ const SingleBlog = () => {
 
   const [isOpen, setIsOpen] = useState(false);
   const [photoIndex, setPhotoIndex] = useState(0);
+
+  const [newsData, setNewsData] = useState([]);
 
   useEffect(() => {
     const fetchBlogContent = async () => {
@@ -49,6 +51,27 @@ const SingleBlog = () => {
   }, [slug]); 
 
   useEffect(() => {
+    const fetchNewsData = async () => {
+      try {
+        const response = await fetch(`${BASE_URL}/blog`);
+        if (!response.ok) {
+          throw new Error("Failed to fetch latest news");
+        }
+        const data = await response.json();
+        setNewsData(data); // Assuming the response is an array of news articles
+        console.log(data);
+      } catch (error) {
+        setError(error.message);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchNewsData();
+  }, []);
+
+
+  useEffect(() => {
     // Set image styles after content is rendered
     const adjustImageStyles = () => {
         const images = document.querySelectorAll('.blog_content img');
@@ -70,8 +93,7 @@ const SingleBlog = () => {
       <div className="container3">
         <div className="header">
           <div className="box">
-            <h2>Blog Detail</h2>
-
+            <h1>Blog Details</h1>
             <div className="all-animation">
               <div className="all-animation1">
                 <img
@@ -144,7 +166,7 @@ const SingleBlog = () => {
       <div className="blog_details py-5">
         <div className="container">
           <div className="row">
-            <div className="col-md-9 pe-md-5">
+            <div className="col-lg-8 ">
 
 
               {loading ? ( <p>Loading...</p>) : error ? (  <p>Error: {error}</p>  ) : (
@@ -154,42 +176,51 @@ const SingleBlog = () => {
               </>
               )}
             </div>
-            <div className="col-md-3 gallery_view ps-md-3">
-              <h4>Gallery</h4>
-              <div className="row">
-              {images.map((image, index) => (
-              <div className="col-md-4 pe-2 p-0" key={index}>
-                <img
-                  className="w-100 mb-2 "
-                  src={`${WEBSITE_URL}/singleblogimg/${image}`}
-                  alt={`Blog image ${index + 1}`}
-                  onClick={() => {
-                    setPhotoIndex(index);
-                    setIsOpen(true);
-                  }}
-                  style={{ cursor: 'pointer' }} 
-                />
-              </div>
-               ))}
+            <div className="col-lg-4  px-md-5">
+              <div className="gallery_view mb-5">
+                <h4>Gallery</h4>
+                <div className="d-flex flex-wrap">
+                {images.map((image, index) => (
+                <div className="col-md-3 pe-2 p-0" key={index}>
+                  <img
+                    className="w-100 mb-2 "
+                    src={`${WEBSITE_URL}/singleblogimg/${image}`}
+                    alt={`Blog image ${index + 1}`}
+                    onClick={() => {
+                      setPhotoIndex(index);
+                      setIsOpen(true);
+                    }}
+                    style={{ cursor: 'pointer' }} 
+                  />
+                </div>
+                ))}
 
-              {/* Lightbox Modal */}
-              {isOpen && (
-                <Lightbox
-                  mainSrc={`${WEBSITE_URL}/singleblogimg/${images[photoIndex]}`}
-                  nextSrc={`${WEBSITE_URL}/singleblogimg/${images[(photoIndex + 1) % images.length]}`}
-                  prevSrc={`${WEBSITE_URL}/singleblogimg/${images[(photoIndex + images.length - 1) % images.length]}`}
-                  onCloseRequest={() => setIsOpen(false)}
-                  onMovePrevRequest={() =>
-                    setPhotoIndex((photoIndex + images.length - 1) % images.length)
-                  }
-                  onMoveNextRequest={() =>
-                    setPhotoIndex((photoIndex + 1) % images.length)
-                  }
-                  enableZoom={true}  
-                />
-              )}
+{isOpen && (
+        <Lightbox
+          images={images.map((img) => `${WEBSITE_URL}/singleblogimg/${img}`)}
+          onClose={() => setIsOpen(false)}
+        />
+      )}
 
+                </div>
               </div>
+
+              <div className="latest-news">
+                <h4 className="mb-4">Latest News</h4>
+                <div className="news-list">
+                  {newsData.slice(0, 3).map((newsItem, index) => (
+                    <Link to={`/single-blog/${newsItem.slug}`}
+                     key={index} 
+                     className="news-item d-flex align-items-center  mb-4">
+
+                     <img className="me-2 border rounded-2" src={`/blogimg/${newsItem.image}`} style={{height:"60px",width:"60px",objectFit:"contain"}} alt="" />
+                     <h6>{newsItem.heading}</h6>
+                    
+                    </Link>
+                  ))}
+                </div>
+              </div>
+
             </div>
           </div>
         </div>

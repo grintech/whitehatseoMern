@@ -1517,7 +1517,7 @@ width: 100%;
     width: 100%;
 }
 
-.gallery_view img{height: 100px; object-fit: cover;}
+.gallery_view img{height: 70px; object-fit: cover;}
 
   /* MEDIA QUERIES FOR ALL */
 

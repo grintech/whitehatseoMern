@@ -18,6 +18,7 @@ import 'swiper/css/scrollbar';
   };
 
   const BASE_URL = process.env.REACT_APP_URL;   
+  const WEBSITE_URL = process.env.REACT_APP_FRONTEND;
 
 export default () => {
 
@@ -45,8 +46,8 @@ export default () => {
       slidesPerView={1}
       // loop={true}
       autoplay={{
-        delay: 3000, // Change slide every 3 seconds
-        disableOnInteraction: false, // Autoplay will not be disabled after user interactions
+        delay: 3000, 
+        disableOnInteraction: false, 
       }}
       navigation
       pagination={{ clickable: true }}
@@ -65,7 +66,7 @@ export default () => {
             <div className='card position-relative border-0 '>
               <div className='d-flex align-items-center card-body'>
                 <div className='img'>
-                  <img src={`testimg/${item.image}`} className='img1' alt='member' />
+                  <img src={`${WEBSITE_URL}/testimg/${item.image}`} className='img1' alt='member' />
                 </div>
 
                 <div className='input2'>
@@ -74,6 +75,7 @@ export default () => {
                   {/* <p dangerouslySetInnerHTML={{__html : item.description}} /> */}
                   <p>{stripHtmlTags(item.description )}</p>
                 </div>
+                
               </div>
 
 

@@ -60,8 +60,8 @@ import EditSingleService from './Dashboard/DashPages/SingleServices/EditSingleSe
 
 function App() {
 
-  const { logout } = useAuth();
-  useIdleTimer( 900000, logout);
+  // const { logout } = useAuth();
+  // useIdleTimer( 900000, logout);
 
   
 
